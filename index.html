@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Physics Pathshala | Dr. Vivek Goswami | Premium Physics Coaching</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0B192C',
+                        secondary: '#1E3E62',
+                        accent: '#FF6500',
+                        lightBg: '#F8FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-glow {
+            background: radial-gradient(circle, rgba(255,101,0,0.15) 0%, rgba(11,25,44,1) 70%);
+        }
+    </style>
+</head>
+<body class="bg-lightBg text-gray-800 font-sans selection:bg-accent selection:text-white">
+
+    <header class="bg-primary/95 backdrop-blur-md text-white sticky top-0 z-50 shadow-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-24 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <div class="bg-white p-2 rounded-full flex items-center justify-center w-14 h-14 border-2 border-accent shadow-lg animate-pulse">
+                    <i class="fa-solid fa-atom text-accent text-2xl"></i>
+                </div>
+                <div>
+                    <span class="text-2xl sm:text-3xl font-extrabold tracking-wide">Physics <span class="text-accent">Pathshala</span></span>
+                    <p class="text-xs text-gray-300">Founder: Dr. Vivek Goswami</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium text-lg">
+                <a href="#home" class="hover:text-accent transition duration-200">Home</a>
+                <a href="#founder" class="hover:text-accent transition duration-200">Founder</a>
+                <a href="#courses" class="hover:text-accent transition duration-200">Courses</a>
+                <a href="#features" class="hover:text-accent transition duration-200">Why Us</a>
+                <a href="#contact" class="hover:text-accent transition duration-200">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="/admin.html" target="_blank" class="hidden sm:inline-block text-xs bg-white/10 hover:bg-white/20 text-accent font-semibold px-3 py-2 rounded-lg border border-accent/30 transition">Admin Portal</a>
+                <a href="#contact" class="bg-accent hover:bg-orange-600 text-white font-semibold px-6 py-2.5 rounded-full shadow-lg transition duration-300 transform hover:scale-105 text-base">Enquiry Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-glow bg-primary text-white py-24 lg:py-32 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-6">
+                <span class="bg-accent/20 text-accent text-sm font-semibold px-5 py-2 rounded-full border border-accent/30 inline-block shadow-inner">
+                    🚀 Admissions Open for 2026-27 Batch - Limited Seats
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight">
+                    Master Physics with <span class="text-accent">Concepts</span>, Not Rote Learning.
+                </h1>
+                <p class="text-gray-300 text-lg sm:text-xl leading-relaxed">
+                    Build a rock-solid foundation for Class 10th Science, 11th & 12th Physics, and gear up for future JEE/NEET success under expert mentorship.
+                </p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4 text-lg">
+                    <a href="#courses" class="bg-accent hover:bg-orange-600 text-white text-center font-bold px-8 py-3.5 rounded-full shadow-lg transition duration-300 transform hover:-translate-y-1">Explore Courses</a>
+                    <a href="#contact" class="border border-white/30 hover:bg-white/10 text-white text-center font-bold px-8 py-3.5 rounded-full transition duration-300">Book Free Demo</a>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 sm:p-10 rounded-3xl border border-white/10 backdrop-blur-md shadow-2xl text-primary transform hover:scale-[1.01] transition duration-300">
+                <div class="text-center mb-6">
+                    <span class="bg-orange-100 text-accent text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Direct Enquiry Portal</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold mt-2 text-primary">Connect with Dr. Vivek Goswami</h3>
+                    <p class="text-sm text-gray-500 mt-1">Fill out the form below to secure your seat</p>
+                </div>
+                
+                <form id="enquiryForm" class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Full Name</label>
+                        <input type="text" id="name" required placeholder="e.g., Rahul Sharma" class="w-full bg-lightBg border border-gray-200 rounded-xl px-4 py-3.5 text-primary placeholder-gray-400 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Phone Number</label>
+                        <input type="tel" id="phone" required placeholder="e.g., 9876543210" class="w-full bg-lightBg border border-gray-200 rounded-xl px-4 py-3.5 text-primary placeholder-gray-400 focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium mb-1 text-gray-700">Select Class / Goal</label>
+                        <select id="course" class="w-full bg-lightBg border border-gray-200 rounded-xl px-4 py-3.5 text-primary focus:outline-none focus:border-accent focus:ring-2 focus:ring-accent/20 transition">
+                            <option value="Class 10th (Science)">Class 10th (Science)</option>
+                            <option value="Class 11th (Physics)">Class 11th (Physics)</option>
+                            <option value="Class 12th (Physics)">Class 12th (Physics)</option>
+                            <option value="JEE / NEET Foundation">JEE / NEET Foundation</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="submitBtn" class="w-full bg-accent hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition duration-300 shadow-lg transform hover:-translate-y-0.5 text-lg">Request Call Back</button>
+                </form>
+                <div id="formMessage" class="mt-4 text-center text-sm font-semibold"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white rounded-3xl shadow-xl border border-gray-100 p-8 sm:p-14">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-center">
+                <div class="text-center">
+                    <div class="rounded-full w-48 h-48 sm:w-56 sm:h-56 mx-auto bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-white shadow-2xl border-4 border-accent mb-6 transform hover:rotate-3 transition duration-300">
+                        <i class="fa-solid fa-chalkboard-user text-6xl text-accent"></i>
+                    </div>
+                    <h3 class="text-3xl font-bold text-primary">Dr. Vivek Goswami</h3>
+                    <p class="text-accent font-semibold text-lg">Founder & Lead Faculty</p>
+                </div>
+                <div class="md:col-span-2 space-y-6 text-gray-700">
+                    <span class="bg-primary/10 text-primary text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Expert Mentor</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-primary">From Concepts to Success: A Scientific Approach</h2>
+                    <p class="text-lg leading-relaxed text-gray-600">
+                        At Physics Pathshala, we don't believe in rote learning formulas. Instead, we break down the root physics behind every phenomenon using real-life visual examples. Under Dr. Vivek Goswami's mentorship, students transform their fear of physics into their highest-scoring subject.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4 border-t border-gray-100">
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-accent/10 text-accent rounded-xl text-xl"><i class="fa-solid fa-graduation-cap"></i></div>
+                            <div>
+                                <h4 class="font-bold text-primary text-base">Qualifications</h4>
+                                <p class="text-sm text-gray-500">Ph.D. Physics, M.Sc., P.G. Diploma, GATE Qualified</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="p-3 bg-accent/10 text-accent rounded-xl text-xl"><i class="fa-solid fa-flask"></i></div>
+                            <div>
+                                <h4 class="font-bold text-primary text-base">Research & Training</h4>
+                                <p class="text-sm text-gray-500">ISRO/NASA Workshop participant, IIT Gandhinagar Internship</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-24 bg-white border-y border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="bg-accent/10 text-accent text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Structured Programs</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary">Our Specialized Programs</h2>
+                <p class="text-gray-600 text-lg">Designed carefully to scale student performance from school boards to competitive exams.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-lightBg rounded-3xl shadow-md border border-gray-200 overflow-hidden hover:-translate-y-2 transition duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="bg-primary text-white p-8 text-center group-hover:bg-secondary transition">
+                            <span class="text-accent text-4xl mb-3 inline-block"><i class="fa-solid fa-book-open"></i></span>
+                            <h3 class="text-2xl font-bold">Class 10th Science</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">Comprehensive coverage of Physics, Chemistry & Biology modules with numerical practice.</p>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Strong Board Foundation</li>
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Weekly Practice Sheets</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-xl transition">Join Now</a>
+                    </div>
+                </div>
+                <div class="bg-lightBg rounded-3xl shadow-md border border-gray-200 overflow-hidden hover:-translate-y-2 transition duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="bg-primary text-white p-8 text-center group-hover:bg-secondary transition">
+                            <span class="text-accent text-4xl mb-3 inline-block"><i class="fa-solid fa-bolt"></i></span>
+                            <h3 class="text-2xl font-bold">Class 11th Physics</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">Master Mechanics, Thermodynamics, Waves and build higher-order thinking skills.</p>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Conceptual Derivations</li>
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Numerical Mastery</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-xl transition">Join Now</a>
+                    </div>
+                </div>
+                <div class="bg-lightBg rounded-3xl shadow-md border border-gray-200 overflow-hidden hover:-translate-y-2 transition duration-300 group flex flex-col justify-between">
+                    <div>
+                        <div class="bg-primary text-white p-8 text-center group-hover:bg-secondary transition">
+                            <span class="text-accent text-4xl mb-3 inline-block"><i class="fa-solid fa-lightbulb"></i></span>
+                            <h3 class="text-2xl font-bold">Class 12th Physics</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">Electrodynamics, Optics, Modern Physics covered with board-to-competitive focus.</p>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Board Special Focus</li>
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> PYQ Discussion Sessions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-xl transition">Join Now</a>
+                    </div>
+                </div>
+                <div class="bg-lightBg rounded-3xl shadow-md border border-gray-200 overflow-hidden hover:-translate-y-2 transition duration-300 relative group flex flex-col justify-between">
+                    <span class="absolute top-4 right-4 bg-accent text-white text-xs font-bold px-3 py-1 rounded-full shadow">Upcoming</span>
+                    <div>
+                        <div class="bg-primary text-white p-8 text-center group-hover:bg-secondary transition">
+                            <span class="text-accent text-4xl mb-3 inline-block"><i class="fa-solid fa-graduation-cap"></i></span>
+                            <h3 class="text-2xl font-bold">JEE / NEET Target</h3>
+                        </div>
+                        <div class="p-6 space-y-4">
+                            <p class="text-gray-600 text-sm">Advanced level problem-solving techniques specifically tailored for national entrance exams.</p>
+                            <ul class="space-y-2 text-xs text-gray-600">
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Shortcut Tricks & Logic</li>
+                                <li><i class="fa-solid fa-check text-accent mr-2"></i> Weekly Mock Tests</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="p-6 pt-0">
+                        <a href="#contact" class="block text-center bg-primary hover:bg-secondary text-white font-semibold py-3 rounded-xl transition">Pre-Register</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-primary">Why Physics Pathshala?</h2>
+            <p class="text-gray-600 text-lg">We don't just teach physics; we make you fall in love with how the universe works.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                <div class="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto text-2xl font-bold"><i class="fa-solid fa-brain"></i></div>
+                <h3 class="text-xl font-bold text-primary">Conceptual Visualization</h3>
+                <p class="text-gray-500 text-sm">Every complex formula is derived from scratch using intuitive physical logic.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                <div class="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto text-2xl font-bold"><i class="fa-solid fa-comments"></i></div>
+                <h3 class="text-xl font-bold text-primary">Dedicated Doubt Support</h3>
+                <p class="text-gray-500 text-sm">One-on-one attention with post-class doubt-clearing sessions for every student.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 text-center space-y-4">
+                <div class="w-16 h-16 bg-accent/10 text-accent rounded-full flex items-center justify-center mx-auto text-2xl font-bold"><i class="fa-solid fa-chart-line"></i></div>
+                <h3 class="text-xl font-bold text-primary">Rigorous Test Series</h3>
+                <p class="text-gray-500 text-sm">Regular assessments based strictly on latest board and competitive patterns.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-primary text-white pt-20 pb-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-white/10">
+            <div class="space-y-4">
+                <div class="flex items-center space-x-3">
+                    <div class="bg-accent text-white p-2 rounded-lg font-bold text-xl">
+                        <i class="fa-solid fa-atom"></i>
+                    </div>
+                    <span class="text-2xl font-extrabold tracking-wide">Physics <span class="text-accent">Pathshala</span></span>
+                </div>
+                <p class="text-gray-400 text-sm">Empowering students with conceptual clarity and absolute academic excellence.</p>
+            </div>
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-accent">Quick Links</h4>
+                <ul class="space-y-2 text-sm text-gray-300">
+                    <li><a href="#home" class="hover:text-accent transition">Home</a></li>
+                    <li><a href="#founder" class="hover:text-accent transition">Founder Profile</a></li>
+                    <li><a href="#courses" class="hover:text-accent transition">Our Courses</a></li>
+                </ul>
+            </div>
+            <div class="space-y-4">
+                <h4 class="text-lg font-bold text-accent">Contact Center</h4>
+                <p class="text-sm text-gray-300"><i class="fa-solid fa-location-dot text-accent mr-2"></i> Kamleshwar Colony, Dabra, Gwalior, MP</p>
+                <p class="text-sm text-gray-300"><i class="fa-solid fa-phone text-accent mr-2"></i> +91 62643-79027, 92383-48583</p>
+                <div class="flex space-x-4 pt-2">
+                    <a href="https://www.instagram.com/physics_pathshala_2025?igsh=MTR1a3Jnb3ZnajE3Zw==" target="_blank" class="w-10 h-10 bg-white/10 hover:bg-accent rounded-full flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 text-center text-sm text-gray-400 flex flex-col sm:flex-row justify-between items-center">
+            <p>&copy; 2026 Physics Pathshala (Dr. Vivek Goswami). All rights reserved.</p>
+            <a href="/admin.html" target="_blank" class="text-accent hover:underline mt-2 sm:mt-0 text-xs font-semibold">🔒 Client Admin Dashboard Portal</a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('enquiryForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('phone').value;
+            const course = document.getElementById('course').value;
+            const msgDiv = document.getElementById('formMessage');
+            const btn = document.getElementById('submitBtn');
+
+            btn.disabled = true;
+            btn.innerText = 'Submitting...';
+
+            try {
+                const response = await fetch('/api/enquiry', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ name, phone, course })
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    msgDiv.className = 'mt-4 text-center text-sm font-semibold text-green-600';
+                    msgDiv.innerText = 'Thank you! Your enquiry has been successfully saved. We will contact you soon.';
+                    document.getElementById('enquiryForm').reset();
+                } else {
+                    msgDiv.className = 'mt-4 text-center text-sm font-semibold text-red-600';
+                    msgDiv.innerText = 'Error: ' + result.message;
+                }
+            } catch (err) {
+                msgDiv.className = 'mt-4 text-center text-sm font-semibold text-red-600';
+                msgDiv.innerText = 'Server connection failed!';
+            } finally {
+                btn.disabled = false;
+                btn.innerText = 'Request Call Back';
+            }
+        });
+    </script>
+</body>
+</html>
