@@ -44,24 +44,21 @@
     <script>
         async function fetchLeads() {
             try {
-                const res = await fetch('/api/leads');
-                if (res.redirected) {
-                    window.location.href = '/login.html';
-                    return;
-                }
+                // Backend ke sahi route (/get-enquiries) ke sath matched
+                const res = await fetch('/get-enquiries');
                 const rows = await res.json();
                 const tbody = document.getElementById('leadsTable');
 
                 if (Array.isArray(rows) && rows.length > 0) {
                     tbody.innerHTML = '';
-                    rows.forEach(lead => {
+                    rows.forEach((lead, index) => {
                         tbody.innerHTML += `
                             <tr class="border-b hover:bg-gray-50 transition">
-                                <td class="p-4 font-semibold text-gray-800">#${lead.id}</td>
-                                <td class="p-4 font-medium text-gray-900">${lead.fullName || 'N/A'}</td>
-                                <td class="p-4 text-orange-600 font-semibold"><a href="tel:${lead.phoneNumber}">${lead.phoneNumber || 'N/A'}</a></td>
-                                <td class="p-4"><span class="bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded-full font-medium">${lead.selectedCourse || 'N/A'}</span></td>
-                                <td class="p-4 text-xs text-gray-500">${lead.createdAt ? new Date(lead.createdAt).toLocaleString() : 'N/A'}</td>
+                                <td class="p-4 font-semibold text-gray-800">#${index + 1}</td>
+                                <td class="p-4 font-medium text-gray-900">${lead.name || 'N/A'}</td>
+                                <td class="p-4 text-orange-600 font-semibold"><a href="tel:${lead.phone}">${lead.phone || 'N/A'}</a></td>
+                                <td class="p-4"><span class="bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded-full font-medium">${lead.course || 'N/A'}</span></td>
+                                <td class="p-4 text-xs text-gray-500">${lead.date ? new Date(lead.date).toLocaleString() : 'N/A'}</td>
                             </tr>
                         `;
                     });
@@ -74,7 +71,6 @@
         }
 
         async function logout() {
-            await fetch('/api/logout', { method: 'POST' });
             window.location.href = '/login.html';
         }
 
