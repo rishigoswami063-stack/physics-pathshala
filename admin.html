@@ -41,20 +41,20 @@
     <script>
         async function fetchLeads() {
             try {
-                const res = await fetch('/api/enquiries');
-                const result = await res.json();
+                const res = await fetch('/api/leads');
+                const rows = await res.json();
                 const tbody = document.getElementById('leadsTable');
 
-                if (result.success && result.data.length > 0) {
+                if (Array.isArray(rows) && rows.length > 0) {
                     tbody.innerHTML = '';
-                    result.data.forEach(lead => {
+                    rows.forEach(lead => {
                         tbody.innerHTML += `
                             <tr class="border-b hover:bg-gray-50 transition">
                                 <td class="p-4 font-semibold text-gray-800">#${lead.id}</td>
-                                <td class="p-4 font-medium text-gray-900">${lead.name}</td>
-                                <td class="p-4 text-orange-600 font-semibold"><a href="tel:${lead.phone}">${lead.phone}</a></td>
-                                <td class="p-4"><span class="bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded-full font-medium">${lead.course}</span></td>
-                                <td class="p-4 text-xs text-gray-500">${new Date(lead.created_at).toLocaleString()}</td>
+                                <td class="p-4 font-medium text-gray-900">${lead.fullName}</td>
+                                <td class="p-4 text-orange-600 font-semibold"><a href="tel:${lead.phoneNumber}">${lead.phoneNumber}</a></td>
+                                <td class="p-4"><span class="bg-blue-100 text-blue-800 text-xs px-2.5 py-1 rounded-full font-medium">${lead.selectedCourse}</span></td>
+                                <td class="p-4 text-xs text-gray-500">${new Date(lead.createdAt).toLocaleString()}</td>
                             </tr>
                         `;
                     });
